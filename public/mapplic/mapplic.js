@@ -1423,6 +1423,7 @@
 
         if (categories) {
           $.each(categories, function (index, category) {
+            //    Тимчасово закоментовано через помилку
             // category.nr = 0;
 
             if (!(category.hide == "true")) {
@@ -1430,8 +1431,8 @@
                 .addClass("mapplic-list-category")
                 .attr("data-category", category.id);
               var link = $("<a></a>").attr("href", "#").prependTo(item);
-
-              var thumbnail = null; //self.directory .thumbnail(category.title, category.icon) .appendTo(link);
+              //    Тимчасово закоментовано через помилку
+              var thumbnail = null; // self.directory .thumbnail(category.title, category.icon) .appendTo(link);
               if (category.color && thumbnail)
                 thumbnail.css({
                   "background-color": category.color,
@@ -1445,6 +1446,7 @@
                   .addClass("mapplic-about")
                   .html(category.about)
                   .appendTo(link);
+              //    Тимчасово закоментовано через помилку
               //   category.count = $("<span></span>")
               //     .text("(0)")
               //     .addClass("mapplic-list-count")
@@ -1462,7 +1464,7 @@
                   s.addTag(category);
                 }
               });
-
+              //    Тимчасово закоментовано через помилку
               //   category.list = item;
               //   item.appendTo(list);
               //   add = true;
@@ -2675,6 +2677,7 @@
     };
 
     var replaceVars = function (template, location) {
+      //    Тимчасово закоментовано через помилку
       //   template = template.replace(/\{\{([^}]+)\}\}/g, function (match) {
       //     match = match.slice(2, -2);
       //     var sub = match.split(".");

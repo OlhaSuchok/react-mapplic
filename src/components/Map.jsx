@@ -40,6 +40,14 @@ const MapplicComponent = () => {
           source: "/mapplic/map-data.json",
           height: 600,
         });
+
+        // Лог для перевірки ініціалізації
+        console.log("Mapplic has been initialized");
+
+        // Прослуховування події ініціалізації Mapplic
+        window.$(mapRef.current).on("mapready", () => {
+          console.log("Mapplic map is ready");
+        });
       } catch (error) {
         console.error("Error loading Mapplic:", error);
       }
